@@ -36,9 +36,11 @@ git clone https://github.com/apache/camel.git
 cd camel
 mkdir my-files
 	# gives details on commit, author date and lines changed
+	# '--all' and '--'' parameters included since path/filename has changed since commit
 git log --all -- camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/log-file1.txt
 git log --all -- camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/log-file2.txt
 	# gives summary of authors and number of commits for file
+	# '--all' and '--'' parameters included since path/filename has changed since commit
 git shortlog --all -- camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/shortlog-file1.txt
 git shortlog --all -- camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/shortlog-file2.txt
 	# gives summary of authors and number of commits for repo
