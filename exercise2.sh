@@ -36,10 +36,10 @@ git clone https://github.com/apache/camel.git
 cd camel
 mkdir my-files
 	# gives details on commit, author date and lines changed
-git log camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/log-file1.txt
-git log camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/log-file2.txt
+git log --all -- camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/log-file1.txt
+git log --all -- camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/log-file2.txt
 	# gives summary of authors and number of commits for file
-git shortlog camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/shortlog-file1.txt
-git shortlog camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/shortlog-file2.txt
+git shortlog --all -- camel-core/src/main/java/org/apache/camel/processor/validation/SchemaReader.java > my-files/shortlog-file1.txt
+git shortlog --all -- camel-core/src/main/java/org/apache/camel/processor/validation/ValidatingProcessor.java > my-files/shortlog-file2.txt
 	# gives summary of authors and number of commits for repo
 git shortlog > my-files/shortlog.txt
